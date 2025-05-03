@@ -32,7 +32,7 @@ int main()
 		memset(buff, 0, 20);
 		_delay_ms(1000);
 		UART_Send_String("Enter a string:\r\n");
-		rcvstr = (char*) UART_Receive_String(FALSE);
+		rcvstr = (char*) UART_Receive_String(TRUE);
 		UART_Send_String("string: ");
 		UART_Send_String(rcvstr);
 		UART_Send_String("\r\n");
